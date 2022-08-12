@@ -1,0 +1,512 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="网易页面.css">
+    <script src="animate.js"></script>
+    <script src="index.js"></script>
+    <script crossorigin="anonymous" src="https://cdn.bootcdn.net/ajax/libs/axios/0.27.2/axios.js"></script>
+
+</head>
+<body>
+    <div class="m-top">
+        <div class="wrap">
+            <h1 class="logo"></h1>
+            <!-- 顶部导航栏 -->
+            <ul class="m-nav">
+              <li class="z-slt"><span><a href="https://music.163.com/#"><em>发现音乐</em></a></span></li>
+              <li ><span><a href=""><em>我的音乐</em></a></span></li>
+              <li><span><a href=""><em>关注</em></a></span></li>
+              <li><span><a href=""><em>商城</em></a></span></li>
+              <li><span><a href=""><em>音乐人</em></a></span></li>
+              <li class="re"><span><a href=""><em>下载客户端</em></a></span>
+                <i class="hot"></i>
+              </li>
+            </ul>
+            <!-- 登录 -->
+            <div class="loginBtn"><a href="#">登录</a></div>
+            <!-- 创作者中心 -->
+            <a href="#" class="creator_a">创作者中心</a>
+            <!-- 顶部搜索框 -->
+            <div class="search">
+                <div class="parent">
+                    <input type="search" class="searchInput" id="keyword"  placeholder="音乐/视频/电台/用户">
+                    <label for=""></label>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 红色导航栏 -->
+    <div class="rednav">
+        <div class="redwrap">
+        <ul class="nav">
+           <li><a href="#"><em>推荐</em></a></li>
+           <li><a href=""><em class="teshu">排行榜</em></a></li>
+           <li><a href=""><em class="gedan">歌单</em></a></li>
+           <li><a href=""><em>主播电台</em></a></li>
+           <li><a href=""><em>歌手</em></a></li>
+           <li><a href=""><em>新碟上架</em></a></li>
+        </ul>
+        </div>
+    </div>
+
+    <!-- 轮播图 -->
+    <div class="sliderWrap">
+        <div class="wrap">
+            <!-- 轮播图图片 -->
+            <div class="focus f1">
+                <ul class="pic">
+                  <li ><a href=""><img src="https://p1.music.126.net/QGvEuum5k7FK3_twZ1ijXg==/109951167735706423.jpg?imageView&quality=89" alt=""></a></li>
+                  <li><a href=""><img src="https://p1.music.126.net/SBLswFYQ9CV-XWqH-x41dA==/109951167744079273.jpg?imageView&quality=89" alt=""></a></li>
+                  <li><a href=""><img src="https://p1.music.126.net/KTX1xi962XQgR-Sbt0o-Qw==/109951167743969064.jpg?imageView&quality=89" alt=""></a></li>
+                  <li><a href=""><img src="https://p1.music.126.net/QGvEuum5k7FK3_twZ1ijXg==/109951167735706423.jpg?imageView&quality=89" alt=""></a></li>
+                  <li><a href=""><img src="https://p1.music.126.net/Qnr0faHeNDBz1aBKSDNTXQ==/109951167748943270.jpg?imageView&quality=89" alt=""></a></li>
+                  <li><a href=""><img src="https://p1.music.126.net/QGvEuum5k7FK3_twZ1ijXg==/109951167735706423.jpg?imageView&quality=89" alt=""></a></li>
+                 
+                </ul>
+                <!-- 小圆点 -->
+                <ol class="circle">
+                    
+                </ol>
+            </div>
+            <a href="javascript:;" class="arrow-l"><</a>
+            <a href="javascript:;" class="arrow-r">></a>
+            <!-- 下载客户端 -->
+            <div class="download">
+                <a href=""></a>
+            </div>
+            <!-- 下载客户端结束 -->
+        </div>
+      
+    </div>
+    
+    <!-- 主体部分 -->
+    <div class="mainWrap">
+       <div class="middleWrap">
+            <!-- 左边的容器 -->
+            <div class="letfWrap"> 
+                <!-- 热门推荐 -->
+                <div class="hotVideo">
+                    <a href="" class="rmtj_title">热门推荐</a>
+                    <div class="rmtj_btn">
+                        <a href="#">华语</a>
+                        <span class="line">|</span>
+                        <a href="#">流行</a>
+                        <span class="line">|</span>
+                        <a href="#">摇滚</a>
+                        <span class="line">|</span>
+                        <a href="#">民谣</a>
+                        <span class="line">|</span>
+                        <a href="#">电子</a>
+                    </div>
+                    <span class="more">
+                        <a href="">更多</a>
+                        <i class="cor">&nbsp;</i>
+                    </span>
+                </div>
+                <div class="rmtj_content">
+                    <li>
+                        <div class="cover">
+                            <img src="https://p2.music.126.net/gEzR8wgWgrZjgZVCZhDwQw==/109951167621487616.jpg?param=140y140" alt="">
+                            <a href="https://music.163.com/#/playlist?id=5377737228">很喜欢 很短暂 很遗憾</a>
+                            <div class="bottom">
+                                <a href="javascript:;" title="播放" class="play"></a>
+                                <span class="headset"></span>
+                                <span class="playNumber">12589</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cover">
+                            <img src="https://p1.music.126.net/6y92YgeZ7pjCaxdHXXyoWA==/109951162889800231.jpg?param=140y140" alt="">
+                            <a href="https://music.163.com/#/playlist?id=643650927">电音｜旋律中致郁的心电击</a>
+                            <div class="bottom">
+                                <a href="javascript:;"title="播放" class="play"></a>
+                                <span class="headset"></span>
+                                <span class="playNumber">12365</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cover">
+                            <img src="https://p2.music.126.net/JvJeX7aFpcP_bv2ne1G_HA==/109951166169586001.jpg?param=140y140" alt="">
+                            <a href="https://music.163.com/#/playlist?id=2553596714">当中国风惊艳时光，岂能不心动</a>
+                            <div class="bottom">
+                                <a href="javascript:;"title="播放" class="play"></a>
+                                <span class="headset"></span>
+                                <span class="playNumber">123658</span>
+                            </div>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="cover">
+                            <img src="https://p2.music.126.net/2PCjilDtjBEEbiWr0uQLQQ==/109951165120516560.jpg?param=140y140" alt="">
+                            <a href="https://music.163.com/#/playlist?id=5070087275">这个夏天 要一起喝橘子味的汽水吗</a>
+                            <div class="bottom">
+                                <a href="javascript:;" title="播放"class="play"></a>
+                                <span class="headset"></span>
+                                <span class="playNumber">12659</span>
+                            </div>
+                        </div >
+                    </li>
+                    <li>
+                        <div class="cover">
+                            <img src="https://p2.music.126.net/Z5Kr6cCvKYXOnrYjVcWSdA==/109951163031735205.jpg?param=140y140" alt="">
+                            <a href="https://music.163.com/#/playlist?id=933900516">纯音乐｜安静的午后，和钢琴跳支舞吧</a>
+                            <div class="bottom">
+                                <a href="javascript:;" title="播放"class="play"></a>
+                                <span class="headset"></span>
+                                <span class="playNumber">12398</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cover">
+                            <img src="https://p4.music.126.net/RKDx0K4qLB_GIp-oJzRMeQ==/109951165475828213.jpg?param=200y200" alt="">
+                            <a href="https://music.163.com/#/playlist?id=2656906764">开启心动模式，耳机里的糖分你一半</a>
+                            <div class="bottom">
+                                <a href="javascript:;"title="播放" class="play"></a>
+                                <span class="headset"></span>
+                                <span class="playNumber">12586</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cover">
+                            <img src="https://p1.music.126.net/4ryVvqlvXp0Kh_fcxCWMsA==/109951166903789195.jpg?param=140y140" alt="">
+                            <a href="https://music.163.com/#/playlist?id=3091047129">情绪博物馆 | 喜怒哀乐放大镜</a>
+                            <div class="bottom">
+                                <a href="javascript:;"title="播放" class="play"></a>
+                                <span class="headset"></span>
+                                <span class="playNumber">54863</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cover">
+                            <img src="https://p2.music.126.net/_JFf2SUrVR9Vn-Z7iOhWMw==/109951163888205837.jpg?param=140y140" alt="">
+                            <a href="https://music.163.com/#/playlist?id=2656906764">愿你岁月无波澜，敬我余生不悲欢</a>
+                            <div class="bottom">
+                                <a href="javascript:;" class="play"></a>
+                                <span class="headset"></span>
+                                <span class="playNumber"></span>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            <!--新碟上架 -->
+            <div class="hotVideo">
+                <a href="" class="rmtj_title">新碟上架</a>
+                <span class="more">
+                    <a href="">更多</a>
+                    <i class="cor">&nbsp;</i>
+                </span>
+            </div>
+            <!-- 新碟上架轮播图 -->
+            <div class="xdsj_wrap">
+                <a href="" class="leftBtn"> </a>
+                <div class="roll">
+                    <ul>
+                        <li >
+                            <div class="cover_img">
+                                <!-- 唱片上面的播放按钮 -->
+                                <a title="播放" href="" class="cover_icon_play"></a>
+                                <!-- 唱片封面的样子 -->
+                                <a href="" class="cover_mask"></a>
+                                <img src="" alt="">
+                                <!-- 歌曲名 -->
+                                <p><a href="https://music.163.com/#/album?id=148290909" title="姚中二" class="song_name">姚中二</a></p>
+                                <p><a href="https://music.163.com/#/artist?id=12288442" title="AnsrJ" class="singer_name">MC HotDog 热狗</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cover_img">
+                                <!-- 唱片上面的播放按钮 -->
+                                <a title="播放" href="" class="cover_icon_play"></a>
+                                <!-- 唱片封面的样子 -->
+                                <a href="" class="cover_mask"></a>
+                                <img src="" alt="">
+                                <!-- 歌曲名 -->
+                                <p><a href="https://music.163.com/#/album?id=148290909" title="成都街娃" class="song_name">成都街娃</a></p>
+                                <p><a href="https://music.163.com/#/artist?id=12288442" title="AnsrJ" class="singer_name">AnsrJ</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cover_img">
+                                <!-- 唱片上面的播放按钮 -->
+                                <a title="播放" href="" class="cover_icon_play"></a>
+                                <!-- 唱片封面的样子 -->
+                                <a href="" class="cover_mask"></a>
+                                <img src="" alt="">
+                                <!-- 歌曲名 -->
+                                <p><a href="https://music.163.com/#/album?id=148290909" title="成都街娃" class="song_name">成都街娃</a></p>
+                                <p><a href="https://music.163.com/#/artist?id=12288442" title="AnsrJ" class="singer_name">AnsrJ</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cover_img">
+                                <!-- 唱片上面的播放按钮 -->
+                                <a title="播放" href="" class="cover_icon_play"></a>
+                                <!-- 唱片封面的样子 -->
+                                <a href="" class="cover_mask"></a>
+                                <img src="" alt="">
+                                <!-- 歌曲名 -->
+                                <p><a href="https://music.163.com/#/album?id=148290909" title="成都街娃" class="song_name">成都街娃</a></p>
+                                <p><a href="https://music.163.com/#/artist?id=12288442" title="AnsrJ" class="singer_name">AnsrJ</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cover_img">
+                                <!-- 唱片上面的播放按钮 -->
+                                <a title="播放" href="" class="cover_icon_play"></a>
+                                <!-- 唱片封面的样子 -->
+                                <a href="" class="cover_mask"></a>
+                                <img src="" alt="">
+                                <!-- 歌曲名 -->
+                                <p><a href="https://music.163.com/#/album?id=148290909" title="成都街娃" class="song_name">成都街娃</a></p>
+                                <p><a href="https://music.163.com/#/artist?id=12288442" title="AnsrJ" class="singer_name">AnsrJ</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="rightfBtn"> </a>
+            </div>
+            <!-- 榜单头 -->
+            <div class="hotVideo">
+                <a href="" class="rmtj_title">榜单</a>
+                <span class="more">
+                    <a href="">更多</a>
+                    <i class="cor">&nbsp;</i>
+                </span>
+            </div>
+            <!-- 榜单表格 -->
+            <div class="hotList">
+                <!-- 飙升榜 -->
+               <dl class="blk">
+                <dt class="bs_top">
+                    <div class="bs_cover">
+                    <img src="http://p4.music.126.net/pcYHpMkdC69VVvWiynNklA==/109951166952713766.jpg?param=100y100" alt="">
+                    <a href="https://music.163.com/#/discover/toplist?id=19723756" title="飙升榜"></a>
+                    </div>
+                    <div class="tit">
+                      <a href="https://music.163.com/#/discover/toplist?id=19723756" title="飙升榜">
+                         <h3>飙升榜</h3>
+                      </a>
+                      <div class="tit_top">
+                        <a href="" title="播放" class="a1"></a>
+                        <a href="" title="收藏" class="a2"></a>
+                      </div>
+                    </div>
+                </dt> 
+                <dd class="bsb">
+                    <ol>
+                        <li>麒麟 (LIVE版)</li>
+                        <li>鱼尔摩斯</li>
+                        <li>晚风与你</li>
+                        <li>当</li>
+                        <li>立秋</li>
+                        <li>一直很安静</li>
+                        <li>无人生还</li>
+                        <li>未来等你</li>
+                        <li>艳</li>
+                        <li>慢冷</li>
+                    </ol>
+                    <div class="ckgd">
+                        <a href="">查看更多</a></div>
+                </dd>
+               </dl>
+               <!-- 飙升榜结束 -->
+                <!--  新歌榜 -->
+                <dl class="blk">
+                    <dt class="bs_top">
+                        <div class="bs_cover">
+                        <img src="https://p3.music.126.net/wVmyNS6b_0Nn-y6AX8UbpQ==/109951166952686384.jpg?param=100y100" alt="">
+                        <a href="https://music.163.com/#/discover/toplist?id=19723756" title="新歌榜"></a>
+                        </div>
+                        <div class="tit">
+                          <a href="https://music.163.com/#/discover/toplist?id=19723756" title="新歌榜">
+                             <h3>新歌榜</h3>
+                          </a>
+                          <div class="tit_top">
+                            <a href="" title="播放" class="a1"></a>
+                            <a href="" title="收藏" class="a2"></a>
+                          </div>
+                        </div>
+                    </dt> 
+                    <dd class="xgb">
+                        <ol>
+                            <li><span>隆里电丝 (LIVE版)</span></li>
+                            <li><span>阴天快乐</span></li>
+                            <li><span>麒麟 (LIVE版)</span></li>
+                            <li><span> Jellyfish (feat. Michael Seyer)</span></li>
+                            <li><span>爱立刻有</span></li>
+                            <li><span>对你说</span></li>
+                            <li><span>一直很安静</span></li>
+                            <li><span>当</span></li>
+                            <li><span>慢冷 (Live)</span></li>
+                            <li><span>别怕变老 (LIVE版)</span></li>
+                            
+
+                            
+                        </ol>
+                        <div class="ckgd">
+                            <a href="">查看更多</a></div>
+                    </dd>
+                   </dl>
+                   <!-- 新歌榜结束 -->
+                    <!-- 原创榜 -->
+               <dl class="blk">
+                <dt class="bs_top">
+                    <div class="bs_cover">
+                    <img src="https://p4.music.126.net/iFZ_nw2V86IFk90dc50kdQ==/109951166961388699.jpg?param=100y100" alt="">
+                    <a href="https://music.163.com/#/discover/toplist?id=19723756" title="原创榜"></a>
+                    </div>
+                    <div class="tit">
+                      <a href="https://music.163.com/#/discover/toplist?id=19723756" title="原创榜">
+                         <h3>原创榜</h3>
+                      </a>
+                      <div class="tit_top">
+                        <a href="" title="播放" class="a1"></a>
+                        <a href="" title="收藏" class="a2"></a>
+                      </div>
+                    </div>
+                </dt> 
+                <dd class="ycb">
+                    <ol>
+                        <li>小河淌水1952</li>
+                        <li>LuvisDrug</li>
+                        <li>Eight</li>
+                        <li>Hug me(抱我)</li>
+                        <li>芍药信</li>
+                        <li>流浪佬与知更鸟</li>
+                        <li>倒带一辈子</li>
+                        <li>COME & GO</li>
+                        <li>首席鉴抄官</li>
+                        <li>把玫瑰的生命续给你</li>
+                    </ol>
+                    <div class="ckgd">
+                        <a href="">查看更多</a></div>
+                </dd>
+               </dl>
+               <!-- 原创榜结束 -->
+               
+               
+            </div>
+            <!-- 榜单结束 -->
+            </div>
+            <!-- 左边的容器结束 -->
+
+            <!-- 右边的容器 -->
+            <div class="rightWrap">
+                <!-- 用户登录 开始 -->
+                <div class="userlogin">
+                    <p class="note">登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+                    <a href="" class="btn_a">用户登录</a>
+                </div>
+                <!-- 用户登录 结束 -->
+
+                <!-- 入驻歌手  开始 -->
+                <div class="n-singer">
+                    <h3 class="n-gs">
+                        <span>入驻歌手</span>
+                        <a href="" class="n-a">查看全部></a>
+                    </h3>
+                    <ul>
+                        <li><a href="" class="n-item">
+                            <img src="https://p2.music.126.net/rCsLFXha6SLis0tV7yZ5fA==/109951165588539704.jpg?param=62y62" alt="">
+                            <div class="n-item-content">
+                                <h4><span>张惠妹aMEI</span></h4>
+                                <p class="f-thide">台湾歌手张惠妹</p>
+                            </div>
+                        </a></li>  
+                        <li><a href="" class="n-item">
+                            <img src="https://p2.music.126.net/TQZGbxp-xnJla-q7ii9z0A==/1364493985498917.jpg?param=62y62" alt="">
+                            <div class="n-item-content">
+                                <h4><span>吴莫愁Momo</span></h4>
+                                <p class="f-thide">《中国好声音》选手吴莫愁</p>
+                            </div>
+                        </a></li> 
+                        <li><a href="" class="n-item">
+                            <img src="https://p2.music.126.net/ZEEvSOoXV7Dv2QEkqUN3zg==/109951165625860507.jpg?param=62y62" alt="">
+                            <div class="n-item-content">
+                                <h4><span>孙楠</span></h4>
+                                <p class="f-thide">歌手孙楠 代表作《你快回来》《燃烧》</p>
+                            </div>
+                        </a></li> 
+                        <li><a href="" class="n-item">
+                            <img src="https://p2.music.126.net/1GIlkxKmvKu66ufU83FyvA==/31885837222663.jpg?param=62y62" alt="">
+                            <div class="n-item-content">
+                                <h4><span>麦田老狼</span></h4>
+                                <p class="f-thide">歌手，音乐人。代表作《同桌的你》等。</p>
+                            </div>
+                        </a></li> 
+                        <li><a href="" class="n-item">
+                            <img src="https://p2.music.126.net/MXMZYksJmsa0gcGkuk2mDQ==/109951167712155407.jpg?param=62y62" alt="">
+                            <div class="n-item-content">
+                                <h4><span>陈楚生</span></h4>
+                                <p class="f-thide">唱作歌手</p>
+                            </div>
+                        </a></li> 
+                    </ul>
+                    <div class="n-yyrcontent">
+                        <a href="" class="n-yyr">
+                            <i>申请成为网易音乐人</i></a>
+                    </div>
+                </div>
+                <!-- 入驻歌手  结束 -->
+
+                <!-- 热门主播  开始 -->
+                <div class="hotBozhu">
+                    <h3 class="hot-title">热门主播</h3>
+                    <ul>
+                        <li><a href="" class="hot-picture">
+                            <img src="https://p1.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40" alt="">
+                            <div class="h-item-content">
+                                <p><a href="" class="nm-icn">陈立</a></p>
+                                <p class="hot-jies">心理学家、美食家陈立教授</p>
+                            </div>
+                        </a></li> 
+                        <li><a href="" class="hot-picture">
+                            <img src="	https://p1.music.126.net/GgXkjCzeH4rqPCsrkBV1kg==/109951164843970584.jpg?param=40y40" alt="">
+                            <div class="h-item-content">
+                                <p><a href="" class="nm-icn">刘维-Julius</a></p>
+                                <p class="hot-jies">歌手、播客节目《维维道来...</p>
+                            </div>
+                        </a></li> 
+                        <li><a href="" class="hot-picture">
+                            <img src="https://p1.music.126.net/JZRLszqLQ2edeCd07JoNRQ==/109951166943043252.jpg?param=40y40" alt="">
+                            <div class="h-item-content">
+                                <p><a href="" class="nm-icn">莫非定律MoreFeel</a></p>
+                                <p class="hot-jies">男女双人全创作独立乐团</p>
+                            </div>
+                        </a></li> 
+                        <li><a href="" class="hot-picture">
+                            <img src="https://p1.music.126.net/NHjNoFpLDEZ-3OR9h35z1w==/109951165825466770.jpg?param=40y40" alt="">
+                            <div class="h-item-content">
+                                <p><a href="" class="nm-icn">碎嘴许美达</a></p>
+                                <p class="hot-jies">脱口秀网络红人</p>
+                            </div>
+                        </a></li> 
+                        <li><a href="" class="hot-picture">
+                            <img src="https://p1.music.126.net/CpUdHPNvBvN7kebvL21TTA==/109951163676573083.jpg?param=40y40" alt="">
+                            <div class="h-item-content">
+                                <p><a href="" class="nm-icn">银临Rachel</a></p>
+                                <p class="hot-jies"></p>
+                            </div>
+                        </a></li> 
+                        
+                    </ul>
+                </div>
+                <!-- 热门主播  结束 -->
+            </div>
+        </div>
+    </div>
+    <script src="index-1.js"></script>
+</body>
+</html>
